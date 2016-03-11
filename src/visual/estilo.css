@@ -1,0 +1,20 @@
+#painel{
+	-fx-background-color: black;
+	-fx-border-color: red;
+}
+
+#paneMovel{
+	-fx-background-color: black;
+	-fx-border-color: red;
+}
+
+#pane{
+	-fx-background-color: black;
+	-fx-border-color: red;
+}
+
+#areaConsole{
+	-fx-background-color: black;
+	-fx-text-fill: green;
+	-fx-border-color: red;
+}

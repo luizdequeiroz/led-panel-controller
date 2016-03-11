@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" prefHeight="446.300759179685" prefWidth="295.0" xmlns:fx="http://javafx.com/fxml" fx:controller="visual.FxManager">
+  <children>
+    <TextField fx:id="textMsg" layoutX="108.0" layoutY="235.0" prefHeight="20.0" prefWidth="47.0" promptText="&lt;msg&gt;" />
+    <Button fx:id="botConectar" layoutX="171.0" layoutY="236.0" mnemonicParsing="false" prefHeight="39.9609375" prefWidth="109.0" text="Conectar">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+    <Button fx:id="botDesconectar" layoutX="168.0" layoutY="398.0" mnemonicParsing="false" prefWidth="114.0" text="Desconectar">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+    <TextArea fx:id="areaConsole" editable="false" layoutX="14.0" layoutY="283.0" prefHeight="136.0001220703125" prefWidth="148.0" wrapText="true" />
+    <Button fx:id="botEnviar" layoutX="100.0" layoutY="255.0" mnemonicParsing="false" prefHeight="20.9609375" prefWidth="62.000022070315026" text="Enviar">
+      <effect>
+        <Reflection fraction="0.2" />
+      </effect>
+    </Button>
+    <Label fx:id="labEstado" layoutX="185.0" layoutY="335.0" prefWidth="81.0" textAlignment="CENTER">
+      <effect>
+        <Reflection fraction="0.3" />
+      </effect>
+      <font>
+        <Font name="System Italic" size="12.0" />
+      </font>
+    </Label>
+    <ListView fx:id="listPortas" layoutX="14.0" layoutY="236.0" minHeight="15.9609375" prefHeight="39.9609375" prefWidth="81.0" />
+    <Pane fx:id="painel" layoutX="57.0" layoutY="47.0" prefHeight="178.0" prefWidth="178.00002207031503">
+      <children>
+        <Circle fx:id="led12" layoutX="37.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0">
+          <fill>
+            <Color blue="0.750" green="0.750" red="0.750" fx:id="x1" />
+          </fill>
+        </Circle>
+        <Circle fx:id="led13" fill="$x1" layoutX="58.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led14" fill="$x1" layoutX="79.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led15" fill="$x1" layoutX="100.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led16" fill="$x1" layoutX="121.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led17" fill="$x1" layoutX="142.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led18" fill="$x1" layoutX="163.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led21" fill="$x1" layoutX="16.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led22" fill="$x1" layoutX="37.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led23" fill="$x1" layoutX="58.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led24" fill="$x1" layoutX="79.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led25" fill="$x1" layoutX="100.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led26" fill="$x1" layoutX="121.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led27" fill="$x1" layoutX="142.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led28" fill="$x1" layoutX="163.0" layoutY="36.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led31" fill="$x1" layoutX="16.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led32" fill="$x1" layoutX="37.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led33" fill="$x1" layoutX="58.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led34" fill="$x1" layoutX="79.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led35" fill="$x1" layoutX="100.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led36" fill="$x1" layoutX="121.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led37" fill="$x1" layoutX="142.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led38" fill="$x1" layoutX="163.0" layoutY="57.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led41" fill="$x1" layoutX="16.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led42" fill="$x1" layoutX="37.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led43" fill="$x1" layoutX="58.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led44" fill="$x1" layoutX="79.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led45" fill="$x1" layoutX="100.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led46" fill="$x1" layoutX="121.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led47" fill="$x1" layoutX="142.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led48" fill="$x1" layoutX="163.0" layoutY="78.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led51" fill="$x1" layoutX="16.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led52" fill="$x1" layoutX="37.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led53" fill="$x1" layoutX="58.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led54" fill="$x1" layoutX="79.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led55" fill="$x1" layoutX="100.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led56" fill="$x1" layoutX="121.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led57" fill="$x1" layoutX="142.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led58" fill="$x1" layoutX="163.0" layoutY="99.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led61" fill="$x1" layoutX="16.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led62" fill="$x1" layoutX="37.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led63" fill="$x1" layoutX="58.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led64" fill="$x1" layoutX="79.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led65" fill="$x1" layoutX="100.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led66" fill="$x1" layoutX="121.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led67" fill="$x1" layoutX="142.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led68" fill="$x1" layoutX="163.0" layoutY="120.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led71" fill="$x1" layoutX="16.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led72" fill="$x1" layoutX="37.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led73" fill="$x1" layoutX="58.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led74" fill="$x1" layoutX="79.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led75" fill="$x1" layoutX="100.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led76" fill="$x1" layoutX="121.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led77" fill="$x1" layoutX="142.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led78" fill="$x1" layoutX="163.0" layoutY="141.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led81" fill="$x1" layoutX="16.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led82" fill="$x1" layoutX="37.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led83" fill="$x1" layoutX="58.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led84" fill="$x1" layoutX="79.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led85" fill="$x1" layoutX="100.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led86" fill="$x1" layoutX="121.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led87" fill="$x1" layoutX="142.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led88" fill="$x1" layoutX="163.0" layoutY="162.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+        <Circle fx:id="led11" fill="$x1" layoutX="16.0" layoutY="15.0" radius="10.0" stroke="$x1" strokeType="INSIDE" strokeWidth="0.0" />
+      </children>
+    </Pane>
+    <Label fx:id="labAutor" layoutX="104.0" layoutY="433.0" text="por Luiz de Queiroz">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
+    <Pane fx:id="paneMovel" layoutX="1.0" prefHeight="31.0" prefWidth="292.981911523435">
+      <children>
+        <Circle fx:id="fechar" fill="#990000" layoutX="14.0" layoutY="14.0" radius="10.48046875" strokeType="INSIDE" strokeWidth="10.0" />
+        <Circle fx:id="minimizar" fill="DODGERBLUE" layoutX="35.0" layoutY="14.0" radius="10.48046875" stroke="DODGERBLUE" strokeType="INSIDE" strokeWidth="10.0" />
+        <Label fx:id="labX" layoutX="11.0" layoutY="6.0" text="x" />
+        <Label fx:id="lab_" layoutX="33.0" layoutY="4.0" text="_" />
+        <Label id="label1" layoutX="79.0" layoutY="5.0" opacity="0.99" text="LED PANEL CONTROLLER" textAlignment="CENTER" textFill="RED">
+          <effect>
+            <Reflection fraction="1.0" topOpacity="0.19047619047619047" />
+          </effect>
+          <font>
+            <Font name="Papyrus" size="12.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+    <ProgressBar id="progInic" focusTraversable="true" layoutX="-1.0" layoutY="30.0" opacity="0.35" prefWidth="293.0000999999975">
+      <effect>
+        <Lighting diffuseConstant="2.0" specularExponent="26.666666666666664" surfaceScale="3.1666666666666665">
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <contentInput>
+            <ColorAdjust brightness="-0.13740458015267176" contrast="1.0" hue="-0.08396946564885488" saturation="0.5725190839694656" />
+          </contentInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="RED" />
+          </light>
+        </Lighting>
+      </effect>
+    </ProgressBar>
+  </children>
+  <stylesheets>
+    <URL value="@estilo.css" />
+  </stylesheets>
+</Pane>
